@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.HomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/design_one" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="130dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:rotation="180"
+        android:scaleType="fitXY"
+        android:src="@drawable/ellipse_one" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/design_two" />
+
+    <ImageView
+        android:id="@+id/addBtnHome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/add"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_below="@id/addBtnHome"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD NEW TASK"
+        android:textColor="@color/secondary_color"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:alpha="0.1"
+        android:layout_height="wrap_content"
+        android:src="@drawable/todo"/>
+
+
+    <ImageView
+        android:id="@+id/imgLogout"
+        android:layout_width="100dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logout"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

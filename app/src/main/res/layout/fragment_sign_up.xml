@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.SignUpFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/design_one" />
+
+    <TextView
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/inter_extra_bold"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="130dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:rotation="180"
+        android:scaleType="fitXY"
+        android:src="@drawable/ellipse_one" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/design_two" />
+
+    <RelativeLayout
+        android:id="@+id/inputFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:background="@color/white"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:hint="Type Your Email"
+                    android:textColorHint="@color/secondary_color"
+                    android:textColor="@color/text_color"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="12dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="12dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card1"
+            android:layout_marginHorizontal="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:passwordToggleEnabled="true"
+                android:layout_height="50dp"
+                app:boxStrokeWidth="0dp"
+                app:passwordToggleTint="@color/text_color"
+                android:background="@color/white"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:textColorHint="@color/secondary_color"
+                    android:textColor="@color/text_color"
+                    android:hint="Type Your Password"
+                    android:inputType="textPassword"
+                    android:paddingStart="12dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="12dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card2"
+            android:layout_marginHorizontal="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:passwordToggleEnabled="true"
+                app:boxStrokeWidth="0dp"
+                app:passwordToggleTint="@color/text_color"
+                android:background="@color/white"
+                app:hintTextColor="@color/text_color"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Re-Type Your Password"
+                    android:background="@color/white"
+                    android:textColorHint="@color/secondary_color"
+                    android:textColor="@color/text_color"
+                    android:inputType="textPassword"
+                    android:paddingStart="12dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="12dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgSignUp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/login"
+        android:layout_below="@id/inputFields"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"/>
+
+    <TextView
+        android:id="@+id/tvAlreadyRegistered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Already Registered !!"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="@color/black"
+        android:layout_below="@id/inputFields"
+        android:layout_marginLeft="35dp"/>
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/text_color"
+        android:layout_toRightOf="@id/tvAlreadyRegistered"
+        android:fontFamily="@font/inter_regular"
+        android:text="Sign In"
+        android:textStyle="bold"
+        android:layout_below="@id/inputFields"
+        android:layout_marginLeft="5dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/text_color"
+        android:layout_below="@id/tvSignIn"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+</RelativeLayout>

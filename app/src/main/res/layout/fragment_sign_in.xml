@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.SignInFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/design_one" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="130dp"
+        android:rotation="180"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ellipse_one" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/design_two" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/inter_extra_bold"
+        android:text="Sign In"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="40dp"
+            app:cardUseCompatPadding="true">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:hint="@string/enter_your_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="12dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/secondary_color" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_below="@id/cardView1"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintEnabled="false"
+                app:passwordToggleTint="@color/text_color"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:hint="@string/enter_your_pass"
+                    android:inputType="textPassword"
+                    android:paddingStart="12dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/secondary_color" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:layout_below="@id/cardView2"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/nextBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/login" />
+
+
+        <TextView
+            android:id="@+id/textview32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardView2"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_regular"
+            android:text="Not Registered Yet ??"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/textViewSignUp"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_toRightOf="@id/textview32"
+            android:layout_below="@id/cardView2"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:textStyle="bold"
+            android:text=" Sign Up"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/text_color"
+        tools:layout_editor_absoluteX="181dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "681513781997",
+    "project_id": "to-do-list-81fe0",
+    "storage_bucket": "to-do-list-81fe0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681513781997:android:d5c99474c5afe003621ae4",
+        "android_client_info": {
+          "package_name": "com.chandravir.todolist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlCKPxvk65ButBRhSI59nS0Pi7eoZVzY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
